@@ -15,6 +15,11 @@ public class Main {
         RangeAdder adder1 = new RangeAdder(start1, end1);
         RangeAdder adder2 = new RangeAdder(start2, end2);
 
+         adder1.start();
+        adder1.join();
+        adder2.start();
+        adder2.join();
+
         long partialSum1 = adder1.getSum();
         long partialSum2 = adder2.getSum();
 
